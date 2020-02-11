@@ -2,8 +2,14 @@ package ca.unb.voiaj;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -13,6 +19,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    private static final String TAG = "MapsActivity";
+    private static final int ERROR_DIALOG_REQUEST = 9001;
     private GoogleMap mMap;
 
     @Override
@@ -37,11 +45,35 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+        if(isServiceOK()) {
+            mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+            // Add a marker in Sydney and move the camera
+            LatLng sydney = new LatLng(-34, 151);
+            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        }
     }
+
+    public boolean isServiceOK(){
+        Log.d(TAG, "isServicesOK: checking google services version");
+
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MapsActivity.this);
+
+        if(available == ConnectionResult.SUCCESS){
+            //everything is fine and the user can make map requests
+            Log.d(TAG, "isServicesOK: Google Play Services is working");
+            return true;
+        }
+        else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)){
+            //an error occured but we can resolve it
+            Log.d(TAG, "isServicesOK: an error occured but we can fix it");
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(MapsActivity.this, available, ERROR_DIALOG_REQUEST);
+            dialog.show();
+        }else{
+            Toast.makeText(this, "You can't make map requests", Toast.LENGTH_SHORT).show();
+        }
+        return false;
+    }
+
 }
