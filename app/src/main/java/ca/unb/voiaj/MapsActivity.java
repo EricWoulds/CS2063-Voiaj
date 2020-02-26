@@ -14,6 +14,8 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -47,7 +49,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private static final String TAG = "MapsActivity";
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 9002;
-    private static final float DEFAULT_ZOOM = 15f;
+    private static final float DEFAULT_ZOOM = 16f;
 
     private GoogleMap mMap;
     private boolean perGranted = false;
@@ -61,6 +63,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_maps);
 
         getLocationPermission();
+        if(perGranted){
+            final Button button = findViewById(R.id.returnLocation);
+
+            button.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    getDeviceLocation();
+                }
+            });
+        }
 
     }
 
@@ -68,7 +79,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         try {
-            if (perGranted) {
                 if (perGranted) {
 
                     final Task location = mFusedLocationProviderClient.getLastLocation();
@@ -90,14 +100,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         }
                     });
                 }
-            }
+
         } catch (SecurityException e) {
             Log.d(TAG, "getDeviceLocation: " + e.getMessage());
         }
     }
 
     private void moveCamera(LatLng latLng, float zoom) {
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
     private void startMap() {
@@ -119,4 +129,5 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             ActivityCompat.requestPermissions(this, permissions, LOCATION_PERMISSION_REQUEST_CODE);
         }
     }
+
 }
