@@ -1,0 +1,811 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CqQCHwEAAAUtlf0e1dkoVi_wbYkXqE0K1iACxBX0AX8yQgrwHAZ0JuY8BenXeJ3AQyOIHGZ0nQpMl94JdwISpleSU1yzqQrUuXHV6iKqx8qcwgKfTfFO9wxU4Es2xUVqCrVTZGDLqsWkoCFH-g1mhsaRjvW9Rzh2GOh8q-ChyY-gtNEe2Z2tHxyIfKUFypIFT-b9wLfc7a_fnWQRE9Gq1Ylf8Hb1_7cl_MdgIk8uzjGVSHnKkxMio9JCaKcJ6ozAVkHtaLmyL23CFwEUd07vZwbGgYNvt0hYD5KSP1jOfQJ1gvQzyw4ermMaxUwOHHBFzfWt2u58w829AP4Fk1cOHDVEytCqqzLkYxtrgmoxXoiFriMUmb5p4_ZmqMUYBLyaHPRPDeuO7hIQgB6j7mJNBhNgC5naIXKNgxoUjYTirbDHwO3rBIaadvoTxwuVZEI",
+   "results" : [
+      {
+         "formatted_address" : "899 King St, Fredericton, NB E3B 1C7, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9582861,
+               "lng" : -66.6347516
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95959662989272,
+                  "lng" : -66.63344852010728
+               },
+               "southwest" : {
+                  "lat" : 45.95689697010728,
+                  "lng" : -66.63614817989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "e48a0fba1a2a56587e3a6fa5f0d61fbd8e1a2a50",
+         "name" : "Provincial Cenotaph",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113688018873181740009\"\u003eDarren C\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAccTFTUiQqGV9BK5GdLy8DRa6hL7HfksQOO-ByYzLj3X0SvncTMmh3Uzqu_5_hgg0VS9eVkv2tPXjZOoYYuLoStpV_zle2DKhdHHc7RSsnbP5eDBAWXGfWc9CM6l1-OUPEhD4imS3AH5zAmyLgvd3_YcKGhTomfYvPgKJ9khrpSsUSnCqVtREog",
+               "width" : 1960
+            }
+         ],
+         "place_id" : "ChIJkW1JUqYYpEwRG_lNAaI_b5U",
+         "plus_code" : {
+            "compound_code" : "X958+83 Fredericton, New Brunswick",
+            "global_code" : "87QMX958+83"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJkW1JUqYYpEwRG_lNAaI_b5U",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 22
+      },
+      {
+         "formatted_address" : "Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9389619,
+               "lng" : -66.63714039999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94079707989272,
+                  "lng" : -66.63628967010727
+               },
+               "southwest" : {
+                  "lat" : 45.93809742010728,
+                  "lng" : -66.63898932989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "2a2c22be64aeae2f419a2b6cb4e266a5742ab22b",
+         "name" : "Forest Hill Cemetery Cenotaph",
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115683841187281612088\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAG4_PCZvIwq4IKS5_0p6W0V7wWmvwmtdNO5-UWY5zMdx6idxxx0rtXhxbCE2h0eXdi5c8hAqAQigtwPxxptv70j7NHtx9uZ1ap_B5sFuQP6e1o4k23bD32bR95hfw1DNfEhCxvOkyLO8r5uo3oHYRbGZuGhROxVvSDvCyIE9YN36cT_eY2cGUyw",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJH4drYXUjpEwRVsQhJmi_Y7I",
+         "plus_code" : {
+            "compound_code" : "W9Q7+H4 Fredericton, New Brunswick",
+            "global_code" : "87QMW9Q7+H4"
+         },
+         "rating" : 0,
+         "reference" : "ChIJH4drYXUjpEwRVsQhJmi_Y7I",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "649 Queen St, Fredericton, NB E3B 1C3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9609095,
+               "lng" : -66.63741229999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.96222797989272,
+                  "lng" : -66.63599042010728
+               },
+               "southwest" : {
+                  "lat" : 45.95952832010727,
+                  "lng" : -66.63869007989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "0b9b23184df38128f78ebd5b334519c84c66c8a2",
+         "name" : "York County Courthouse",
+         "photos" : [
+            {
+               "height" : 1200,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111866855089178142931\"\u003eGraeme Ellis\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAnXnXyGnu6RZySGSKchs9IcTNM4VVObf20DHz3JMFzVHXKojTY9iYXF_LEviPwDRRkrvrfbg40rNLjwn6Pv1uRDWan6OTuJgVqk6xEvc9W4LLtymoB8atTcvPJDq1UpRMEhACkXkfBeLvSLkYfvpUTmFPGhQtgxPAHyaJA5inUhUhQjYBvo6C-Q",
+               "width" : 1600
+            }
+         ],
+         "place_id" : "ChIJQW8dVKEYpEwREdMLqH_vxA8",
+         "plus_code" : {
+            "compound_code" : "X967+92 Fredericton, New Brunswick",
+            "global_code" : "87QMX967+92"
+         },
+         "rating" : 3,
+         "reference" : "ChIJQW8dVKEYpEwREdMLqH_vxA8",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1
+      },
+      {
+         "formatted_address" : "51 Woodstock Rd, Fredericton, NB E3B 9L8, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.965663,
+               "lng" : -66.6559257
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.96693007989273,
+                  "lng" : -66.65458962010727
+               },
+               "southwest" : {
+                  "lat" : 45.96423042010728,
+                  "lng" : -66.65728927989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "626195abb56795ba3a97a9b56d0d208d2b229be1",
+         "name" : "Government House",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2989,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106488022837899605302\"\u003eJean-Sébastien Comeau\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA4eUapTZ3W6dMCTTcGFPmzLtQ9dI8kSoRJ-SmyleV9KVkx18zejKa5u4FXH2WSKiu7hFVSaHuRxx4SY_IxpKqCuwrRF5-0tmd9mFLQ_LR9hfwVEem0-ppZfA7Xp_0mRI5EhDke7mXodPQNWs88dIR55GwGhSb_P0OsrI7dc_mvRRbAxQRiIOMcw",
+               "width" : 3730
+            }
+         ],
+         "place_id" : "ChIJQaiBnZwYpEwRo21A_YFq46w",
+         "plus_code" : {
+            "compound_code" : "X88V+7J Fredericton, New Brunswick",
+            "global_code" : "87QMX88V+7J"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJQaiBnZwYpEwRo21A_YFq46w",
+         "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 41
+      },
+      {
+         "formatted_address" : "401 York St, Fredericton, NB E3B 3P8, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9562446,
+               "lng" : -66.6493569
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95753577989272,
+                  "lng" : -66.64787062010728
+               },
+               "southwest" : {
+                  "lat" : 45.95483612010728,
+                  "lng" : -66.65057027989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "9367b5f2921f0b49f5d6e3f03ce9d05d36e4006a",
+         "name" : "Hartt Shoe Factory",
+         "opening_hours" : {},
+         "photos" : [
+            {
+               "height" : 3456,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113688018873181740009\"\u003eDarren C\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAMqRIwTLLTpV15JFxd5p1XUk6-4X_dO2hE_RzRpFbVXrYiv9_RQAxuPMz26i9qNfiw8tg0TlxEIag_dPBGJDNMjoznF9ImuLhiDe6p8bxuRMycjJrdoF3rvRlTYiAzrG7EhDf4SefgwA4ZDgk_xWuDjmbGhTSlQox8w4ZdXXJQOHFc4nP820qAQ",
+               "width" : 4608
+            }
+         ],
+         "place_id" : "ChIJIWYHKXUipEwR3bk9fu4zuXc",
+         "plus_code" : {
+            "compound_code" : "X942+F7 Fredericton, New Brunswick",
+            "global_code" : "87QMX942+F7"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJIWYHKXUipEwR3bk9fu4zuXc",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 11
+      },
+      {
+         "formatted_address" : "Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9580621,
+               "lng" : -66.6244646
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95941192989272,
+                  "lng" : -66.62311477010728
+               },
+               "southwest" : {
+                  "lat" : 45.95671227010727,
+                  "lng" : -66.62581442989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "cf654f768405bbc3d1bf4efd600912aa215062e8",
+         "name" : "Alexander Gibson Memorial",
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113688018873181740009\"\u003eDarren C\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAjVaaEnp_q34hypZZf5gVwufV2xqFJkvfEoWlb2Z7WFflkU3qX4ZXPxSNhm-zLc9weeRmRPQxB-K5Gs11FzGiSlQPKLngH6pQUknbWUPJTI4A_7aGtjv2sAG56mmBWT3DEhCPBj_hVVi2YjEA6a9f8U7HGhSjvw-zYW060KvvCmx32sN1LsFvEg",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJC_14VKkYpEwR_r0TsFQrGOk",
+         "plus_code" : {
+            "compound_code" : "X95G+66 Fredericton, New Brunswick",
+            "global_code" : "87QMX95G+66"
+         },
+         "rating" : 5,
+         "reference" : "ChIJC_14VKkYpEwR_r0TsFQrGOk",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 3
+      },
+      {
+         "formatted_address" : "250 Canada St, Fredericton, NB E3A 4A1, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.978371,
+               "lng" : -66.59241399999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.97970622989272,
+                  "lng" : -66.59116962010727
+               },
+               "southwest" : {
+                  "lat" : 45.97700657010728,
+                  "lng" : -66.59386927989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "63109a192db6beaca53ad19a3d8e1c6cf8781624",
+         "name" : "Marysville Cenotaph",
+         "photos" : [
+            {
+               "height" : 5312,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115683841187281612088\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAUw7VUUxSC7A8yqJOQdKjv4HZo_nd9-N1aidmCYmji1aNU6MR1u_hQZXkcKKB_V0Z17f2wK6K0UfHrK51lNG44EeHfn7L823Sww2Aa3WY0oP3UpW7yYepN_rU1XIOLlwNEhBZEhPOxylPf9Zqj3706lLwGhQknsgwN_nMhHzy4MKLOwxqoaXt8A",
+               "width" : 2988
+            }
+         ],
+         "place_id" : "ChIJsyZwMZcfpEwR46cx1GwAiL8",
+         "plus_code" : {
+            "compound_code" : "XCH5+82 Fredericton, New Brunswick",
+            "global_code" : "87QMXCH5+82"
+         },
+         "rating" : 0,
+         "reference" : "ChIJsyZwMZcfpEwR46cx1GwAiL8",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "2365 Woodstock Rd, Fredericton, NB E3C 1P6, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9664704,
+               "lng" : -66.74008809999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.96776137989272,
+                  "lng" : -66.73870932010728
+               },
+               "southwest" : {
+                  "lat" : 45.96506172010728,
+                  "lng" : -66.74140897989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "1415d6ba05048a921a7635799e3388e9b7e78f06",
+         "name" : "St Peter's Anglican Church and Cemetery Historical Marker",
+         "place_id" : "ChIJ4auSAd09pEwRP9p5z8UM3AQ",
+         "plus_code" : {
+            "compound_code" : "X785+HX Fredericton, New Brunswick",
+            "global_code" : "87QMX785+HX"
+         },
+         "rating" : 4,
+         "reference" : "ChIJ4auSAd09pEwRP9p5z8UM3AQ",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1
+      },
+      {
+         "formatted_address" : "952 Union St, Fredericton, NB E3A 3P7, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.95343,
+               "lng" : -66.6225219
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95476852989272,
+                  "lng" : -66.62105622010726
+               },
+               "southwest" : {
+                  "lat" : 45.95206887010727,
+                  "lng" : -66.62375587989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "9c27093c4d1d1873e3d7d1f6f0897fc82fa7bdb2",
+         "name" : "Fort Nashwaak",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2592,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/103520380643203575929\"\u003eDee King\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA17hZLYjKgyQBt9p9eBdkXAZgdG3Q29kwH9STQaOigjO7ZXM_DKowuC1eoJJHK3S2aLL-LuWG4BJWCGQI61EpQPpHRQui34FWhlaP2xyycmQIBN7KlzvZdr23jHz8BANbEhCBMMhN3YbaNzz2SEmsrLQ3GhTjIbkohCcu3gjFcVzI1QKtJ38iLw",
+               "width" : 4608
+            }
+         ],
+         "place_id" : "ChIJI0dC6KsYpEwRUMNAhmw5GP8",
+         "plus_code" : {
+            "compound_code" : "X93G+9X Fredericton, New Brunswick",
+            "global_code" : "87QMX93G+9X"
+         },
+         "rating" : 3.7,
+         "reference" : "ChIJI0dC6KsYpEwRUMNAhmw5GP8",
+         "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 7
+      },
+      {
+         "formatted_address" : "2-8 Thatch Rd, Lincoln, NB E3B 7E4, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.86921539999999,
+               "lng" : -66.5104947
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.87048872989272,
+                  "lng" : -66.50918457010728
+               },
+               "southwest" : {
+                  "lat" : 45.86778907010728,
+                  "lng" : -66.51188422989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "9deec6e330c4852df8b530c37d95163d8f764be7",
+         "name" : "Wilmot Bluff Lighthouse",
+         "photos" : [
+            {
+               "height" : 4608,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109959041139112599259\"\u003eheather robichaud\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAnCugxx0ubnMj1UaEf9FoR1Fi34BeiQsY7zObEcpV1xqeloRzTGFllOXgYMNbzcADnB0eXJlyVg1Schh9n-A3X2lEw41Egol89mbcK7wcCmgzQjRwiGDFmrkLViJ6WyoUEhBGntYQB_UH3D2SdE_6WzTRGhSpzoYt5GamF8i8_UOVtUPbRPR8Kg",
+               "width" : 3456
+            }
+         ],
+         "place_id" : "ChIJF-Ibwl-epkwRsSe-Par0xXo",
+         "plus_code" : {
+            "compound_code" : "VF9Q+MR Lower Lincoln, Lincoln, NB",
+            "global_code" : "87QMVF9Q+MR"
+         },
+         "rating" : 3.8,
+         "reference" : "ChIJF-Ibwl-epkwRsSe-Par0xXo",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 4
+      },
+      {
+         "formatted_address" : "Oromocto, NB E2V 1C2, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.85087,
+               "lng" : -66.4742844
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.85232682989272,
+                  "lng" : -66.47293137010728
+               },
+               "southwest" : {
+                  "lat" : 45.84962717010728,
+                  "lng" : -66.47563102989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c4023e43443e0e7f94345b7fb0898e22ba0a5ba7",
+         "name" : "Oromocto Cenotaph",
+         "photos" : [
+            {
+               "height" : 5312,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115683841187281612088\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAoRjJYJaI-OSYQF-7N17ekznZc27kTx3cvFM0BRAoWJPMCY5ICRyy3iSoea49OwNOMbggl_QqQKv2N9Q1Ou1Oq2lm-daM0WhTL-RqKeRJkC96GxFnwEgJrzimB9Io6MWqEhAALC8Wb9FuAKHgBB3PqGJdGhTD6wujwSk-g-mhDjNW7A1Z1eHgyQ",
+               "width" : 2988
+            }
+         ],
+         "place_id" : "ChIJ4zPf0rGepkwRsE-eST04I0A",
+         "plus_code" : {
+            "compound_code" : "VG2G+87 Oromocto, New Brunswick",
+            "global_code" : "87QMVG2G+87"
+         },
+         "rating" : 0,
+         "reference" : "ChIJ4zPf0rGepkwRsE-eST04I0A",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "165 Regent St, Fredericton, NB E3B 7B4, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9591538,
+               "lng" : -66.6405795
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.96048507989272,
+                  "lng" : -66.63918547010728
+               },
+               "southwest" : {
+                  "lat" : 45.95778542010728,
+                  "lng" : -66.64188512989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "ef2f2b3f4604590fc859e0f6318f214c8624aa9c",
+         "name" : "NANB Nursing History Resource Centre",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "place_id" : "ChIJa2ao56AYpEwR9vh6kQG2LFQ",
+         "plus_code" : {
+            "compound_code" : "X955+MQ Fredericton, New Brunswick",
+            "global_code" : "87QMX955+MQ"
+         },
+         "rating" : 0,
+         "reference" : "ChIJa2ao56AYpEwR9vh6kQG2LFQ",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "269 Main St, Fredericton, NB E3A 1E1, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9763154,
+               "lng" : -66.64829569999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.97769182989272,
+                  "lng" : -66.64697607010727
+               },
+               "southwest" : {
+                  "lat" : 45.97499217010728,
+                  "lng" : -66.64967572989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "cfd5c5eacc513bcdf429919d409b76003e5814ba",
+         "name" : "Main Street Plaza",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113832845442316345743\"\u003eShannon Blanchard\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA1R3tfAxKG1qKKHNRM7yhSBZaaJsMp1VVf5lubntU5TkAhM4YR6BmHcRZQV_v3gpzh9Ey3kldKOovDlPePJ8dTweaif8niH1ddTWv9vAzJrHaJ6hFbwcvsMZZGZxPeXD8EhBi1Ndu0qtrSj00JzNr62wIGhQznLHFCMwpriTzms73HZh8ZWu3HA",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJQS9kD40YpEwR5PBtpn_vGzk",
+         "plus_code" : {
+            "compound_code" : "X9G2+GM Fredericton, New Brunswick",
+            "global_code" : "87QMX9G2+GM"
+         },
+         "rating" : 3.9,
+         "reference" : "ChIJQS9kD40YpEwR5PBtpn_vGzk",
+         "types" : [ "shopping_mall", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 182
+      },
+      {
+         "formatted_address" : "801 Kanata Ave, Kanata, ON K2T 1E7, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.309537,
+               "lng" : -75.909035
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.31109312989273,
+                  "lng" : -75.90700869999999
+               },
+               "southwest" : {
+                  "lat" : 45.30839347010728,
+                  "lng" : -75.91113390000002
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png",
+         "id" : "9108cd0729321c74ddb0851aab6ff57c5b26e0f6",
+         "name" : "Landmark Cinemas Kanata",
+         "opening_hours" : {},
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106275412135723723634\"\u003eLandmark Cinemas\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAANKxWxj-qVQm4V_5yV95etzC8HoEwVZvjsx57TICI3QEDIGrnVsWM9cpU0RrMkA9Pl1WYTIvHI26STHLajMOBOuv9GZJSrVU5CWVwZrGAwJIVw7_XPn-bx8NV-hwVP3TgEhAYqke45BhzFrSFUKTl9W6NGhSt_kgauS4K-CQK-mFTal33epA5Cw",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJba9cOesIzkwRO1xGZgKfFnc",
+         "plus_code" : {
+            "compound_code" : "835R+R9 Kanata, Ottawa, ON",
+            "global_code" : "87Q6835R+R9"
+         },
+         "rating" : 4.4,
+         "reference" : "ChIJba9cOesIzkwRO1xGZgKfFnc",
+         "types" : [ "movie_theater", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 3323
+      },
+      {
+         "formatted_address" : "3752 Innes Rd, Orléans, ON K1W 0C8, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.4482225,
+               "lng" : -75.51568739999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.44970597989272,
+                  "lng" : -75.51443932010727
+               },
+               "southwest" : {
+                  "lat" : 45.44700632010728,
+                  "lng" : -75.51713897989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png",
+         "id" : "4ecb87209559bc1febda4186bb8b6cafc5003fa9",
+         "name" : "Landmark Cinemas 10 Orleans",
+         "opening_hours" : {},
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/105368283489787940307\"\u003eSam\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA8BKZaCYoVuaoibsc5s2kREaNOebeQkf7B8qPkv6DE6BFaulTB8JcuooN7DnEnRdpqzXC6whfTYiEKX6olB7IwHBhlsbNTq0m7kntfXiKnzw3Mjx1uCKG-uwsLBsLocYSEhAEyvUD6E_w1xUwgU4ePhY4GhTQPDBrrMciIXb8isJY-gqvzSzOqA",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ_y1eoRoSzkwRP2Xi1ZxzS5s",
+         "plus_code" : {
+            "compound_code" : "CFXM+7P Orléans, Ottawa, ON",
+            "global_code" : "87Q6CFXM+7P"
+         },
+         "rating" : 4.6,
+         "reference" : "ChIJ_y1eoRoSzkwRP2Xi1ZxzS5s",
+         "types" : [ "movie_theater", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 2158
+      },
+      {
+         "formatted_address" : "708 Main St, Wolfville, NS B4P 1G4, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.0873212,
+               "lng" : -64.37944
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.08857972989272,
+                  "lng" : -64.37800792010727
+               },
+               "southwest" : {
+                  "lat" : 45.08588007010727,
+                  "lng" : -64.38070757989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "69296a951c7e6c8287b649283ba97dbcc3f2e400",
+         "name" : "Landmark East School",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "place_id" : "ChIJg-9gkLFVWEsR6g4uRl2iK9w",
+         "plus_code" : {
+            "compound_code" : "3JPC+W6 Wolfville, Nova Scotia",
+            "global_code" : "87QQ3JPC+W6"
+         },
+         "rating" : 5,
+         "reference" : "ChIJg-9gkLFVWEsR6g4uRl2iK9w",
+         "types" : [ "school", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 4
+      },
+      {
+         "formatted_address" : "Foshay Lake, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.8274432,
+               "lng" : -66.11539999999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.82979144999999,
+                  "lng" : -66.11252825
+               },
+               "southwest" : {
+                  "lat" : 45.82666045000001,
+                  "lng" : -66.11635725000001
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "5f083fbd6e8f159617cdecff3f3ec9165b35d940",
+         "name" : "Jemseg Bridge",
+         "photos" : [
+            {
+               "height" : 4048,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102644238743898124830\"\u003eAdam Pope\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAzWuasCPAsEDh5PWCsnkqz7IaM_HGQMAiSRe6YaXhF27bqd6tBfcH9GYE4gPOBS_sHRz7wA6LLJs0AwcTAPAqvDF7TDCJxLqR2BOXv1HEzo3ejfE6oGBEnrUQgWeJgwEGEhD-8_n7IGFVIPwPbYbEw_-wGhRHAN8po4VZqsn22FSTtmWzATCNRw",
+               "width" : 3036
+            }
+         ],
+         "place_id" : "ChIJNb_KmkyVpkwRtUJu6isTAhU",
+         "plus_code" : {
+            "compound_code" : "RVGM+XR Jemseg, Cambridge, NB",
+            "global_code" : "87QMRVGM+XR"
+         },
+         "rating" : 3.9,
+         "reference" : "ChIJNb_KmkyVpkwRtUJu6isTAhU",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 12
+      },
+      {
+         "formatted_address" : "116 Robertson Point Rd, Jemseg, NB E4C 4A5, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.8722538,
+               "lng" : -66.10299069999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.87338417989272,
+                  "lng" : -66.10160262010729
+               },
+               "southwest" : {
+                  "lat" : 45.87068452010728,
+                  "lng" : -66.10430227989274
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "9fa54db72ce2d1517d617106415121094fcf731b",
+         "name" : "Robertson Point Lighthouse",
+         "photos" : [
+            {
+               "height" : 3264,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/107749545652169265736\"\u003eBilly Wagstaff\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAxkLI8WJWA4MHecCEl1_Pa0cIg4pX8oqu6RZsUHcatlEUfa1cNP2bxkliVazrz6g_9fD_AuBlcHe7u9kJsbEnoOuaJaJNhsNmDExJpjVzoTZQzvR6wdun7VZvuRWsOqRuEhCy9yeGdpVAiR_ty7bk9k6tGhRpqDK-ekwO8fIH0FpOvEmMUSmUpg",
+               "width" : 2448
+            }
+         ],
+         "place_id" : "ChIJBZCwhZi_pkwRdnTQI8mzBeU",
+         "plus_code" : {
+            "compound_code" : "VVCW+WR Whites Cove, Cambridge, NB",
+            "global_code" : "87QMVVCW+WR"
+         },
+         "rating" : 4.8,
+         "reference" : "ChIJBZCwhZi_pkwRdnTQI8mzBeU",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 4
+      },
+      {
+         "formatted_address" : "Hampstead, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.5913222,
+               "lng" : -66.2277813
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.59272057989272,
+                  "lng" : -66.22654812010728
+               },
+               "southwest" : {
+                  "lat" : 45.59002092010728,
+                  "lng" : -66.22924777989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "b5b805b335eb9af3963b3bc4e1ca18c0e90dc470",
+         "name" : "Cenotaph",
+         "place_id" : "ChIJD70LBzb0pkwR4Lfaxkc8bo4",
+         "plus_code" : {
+            "compound_code" : "HQRC+GV Oak Point, Petersville, NB",
+            "global_code" : "87QMHQRC+GV"
+         },
+         "rating" : 0,
+         "reference" : "ChIJD70LBzb0pkwR4Lfaxkc8bo4",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "205 Viger Ave W, Montreal, Quebec H2Z 1G2, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.5052047,
+               "lng" : -73.56136789999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.50648082989272,
+                  "lng" : -73.55979947010728
+               },
+               "southwest" : {
+                  "lat" : 45.50378117010727,
+                  "lng" : -73.56249912989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "f715e3d2bf4475faeb26ccb54290ff925806851c",
+         "name" : "Landmark",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3456,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111999484713286843973\"\u003eLandmark\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAJqu6SmblfSDTZwxnjSXiZoG9ytuEtPoGA7lViXfKBgntxVRuSy0pT51yCf6usgrJ-OG0TNQSgCMSb3mfsEDMslwjsD8nL60kFltTBiqAU4IANg4WYBpuSQGTThbJTPGpEhBuReRrjMrViKUygbyeVhLsGhTe9osvoFwzS6TD4anoBJyoWb-4Mw",
+               "width" : 4608
+            }
+         ],
+         "place_id" : "ChIJUSiLf1AayUwRmJH6SOfibVw",
+         "plus_code" : {
+            "compound_code" : "GC4Q+3F Montreal, Quebec",
+            "global_code" : "87Q8GC4Q+3F"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJUSiLf1AayUwRmJH6SOfibVw",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 34
+      }
+   ],
+   "status" : "OK"
+}

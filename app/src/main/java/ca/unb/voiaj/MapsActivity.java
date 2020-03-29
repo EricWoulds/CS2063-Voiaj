@@ -6,7 +6,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.content.Intent;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -14,8 +14,6 @@ import android.util.Log;
 import android.widget.Toast;
 import android.os.AsyncTask;
 
-
-import com.google.android.gms.common.api.Response;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -23,21 +21,11 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import java.util.ArrayList;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
@@ -64,14 +52,19 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean perGranted = false;
     private FusedLocationProviderClient mFusedLocationProviderClient;
 
+
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
     private final String GOOGLE_BROWSER_API_KEY = "AIzaSyAmTIQ7Pljct5SqiAl4b5EPqqFCQ46K6HY";
-    private List<GooglePlace> mGooglePlaces;
+    private ArrayList<GooglePlace> mGooglePlaces;
+
+    public Context context;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        context = getApplicationContext();
 
         getLocationPermission();
 
@@ -81,18 +74,18 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         try {
                 if (perGranted) {
-                    final Task location = mFusedLocationProviderClient.getLastLocation();
-                    location.addOnCompleteListener(new OnCompleteListener() {
+                    final Task<Location> location = mFusedLocationProviderClient.getLastLocation();
+                    location.addOnCompleteListener(new OnCompleteListener<Location>() {
 
                         @Override
                         public void onComplete(@NonNull Task task) {
                             if (task.isSuccessful()) {
                                 Log.d(TAG, "onComplete: found location!");
                                 Location currentLocation = (Location) task.getResult();
-
-                                moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
-                                        DEFAULT_ZOOM);
-
+                                if(currentLocation != null){
+                                    moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
+                                            DEFAULT_ZOOM);
+                                }
                                 Downloader dTask = new Downloader();
                                 dTask.execute();
 
@@ -133,16 +126,32 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    public class Downloader extends AsyncTask<Void, Void, String>{
+    public  class Downloader extends AsyncTask<Void, Void, ArrayList<GooglePlace>>{
+
         @Override
-        protected String doInBackground(Void... params) {
-            JsonUtils Json = new JsonUtils();
+        protected ArrayList<GooglePlace> doInBackground(Void... params) {
+            JsonUtils Json = new JsonUtils(context);
+            Log.d(TAG,"JSON processed");
             mGooglePlaces = Json.getGooglePlace();
-            if(mGooglePlaces.isEmpty())
-                Log.d(TAG,"Places : empty" );
-            //TODO
-            //return getString(R.string.download_complete);
-            return "Temp String";
+            return mGooglePlaces;
         }
+        protected void onPostExecute(ArrayList<GooglePlace> result) {
+
+            for(int i = 1; i < mGooglePlaces.size(); i++){
+                final GooglePlace gPlace = mGooglePlaces.get(i);
+                String name = gPlace.getName();
+                String lat = gPlace.getLatitude();
+                String lng = gPlace.getLongitude();
+
+                Double latd = Double.valueOf(lat);
+                Double lngd = Double.valueOf(lng);
+                Log.d(TAG, "LAT "+ latd.toString() + " LNG "+ lngd.toString());
+
+                LatLng newMarker = new LatLng(latd, lngd);
+                mMap.addMarker(new MarkerOptions().position(newMarker)
+                        .title(name));
+            }
+        }
+
     }
 }

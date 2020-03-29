@@ -2,10 +2,8 @@ package ca.unb.voiaj;
 
 import androidx.annotation.NonNull;
 
-
 public class GooglePlace {
     private String name;
-    private String category;
     private String lng;
     private  String lat;
 
@@ -18,7 +16,6 @@ public class GooglePlace {
     public String getName() {
         return name;
     }
-
 
     public String getLongitude(){return lng; }
 
@@ -39,4 +36,5 @@ public class GooglePlace {
 
         public GooglePlace build(){return new GooglePlace(this);}
     }
+
 }

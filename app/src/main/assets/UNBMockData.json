@@ -1,0 +1,764 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CrQCJAEAAEyS_Lgg3jkYuXACIfZtsUij4E5WyaNwmH_69vnurKJtW3s_OCbkG9l7hKhbvJdFnR9IyAi6Sfwu42K6uSr0wpETt4Jb74YCji82c3DrzOJIZNnQMKE1DM_5-1zYZ-gTkEKG4DXH8bgmXNBNyfi7510G5o-jVlOvqkgV7_UPOuGo1-coJkHP0OFtAVb7FZx_JterVlVtGOBy0ug82lBNBT-L8VfQ6420UHnEhxoeeK_bV2-XdXRVBGxudmwnWFDsJAutSBWR9GMSlkfuIGcEZaKLk8xDeaBw3mIbH8UEe5j5g8hHluDu1jo1_oSMRyAQtQqlSKsfJpb1x76qI-y2e7AnlyF0MWvMl6tHabMS1wfae3Gyz8THgXOTRNY5778INU0Y1yLiTXk0LToVD6dvqqYSEIPDXGBm2alW57fzAnziU1kaFFTL1lwiWrZvEwFJW4T5ESleeIZB",
+   "results" : [
+      {
+         "formatted_address" : "3 Bailey Dr, Fredericton, NB E3B 5A3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9455704,
+               "lng" : -66.64082639999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95284645,
+                  "lng" : -66.6327836
+               },
+               "southwest" : {
+                  "lat" : 45.93897065,
+                  "lng" : -66.65092079999998
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "df32c62b925f13f82303b63faa6e973e1c28fc1d",
+         "name" : "University of New Brunswick",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 801,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116923633335826037355\"\u003eRebecca Steeves\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAesCkFmOci8G8lb_KezEBUQqfCnGBTRx08Pr--kIsZMBhuGvhTY0Lromh3bivQGug1Jdn11QoMLsixwcI_FOnNwBvIhORiVorBAH7HK7oIgZ7VXosEsi_Msw_LN1J8U07EhDbVa063BZh2yVUaOtdsoubGhTxhm2vBOauYazGOxtR5yFlsuJ6Lw",
+               "width" : 1200
+            }
+         ],
+         "place_id" : "ChIJm7qldhAipEwR0eo7-3Za1U0",
+         "plus_code" : {
+            "compound_code" : "W9W5+6M Fredericton, New Brunswick",
+            "global_code" : "87QMW9W5+6M"
+         },
+         "rating" : 4.4,
+         "reference" : "ChIJm7qldhAipEwR0eo7-3Za1U0",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 71
+      },
+      {
+         "formatted_address" : "2 Bailey Dr, Fredericton, NB E3B 5A3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9479784,
+               "lng" : -66.64248120000001
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94949192989272,
+                  "lng" : -66.64079182010727
+               },
+               "southwest" : {
+                  "lat" : 45.94679227010728,
+                  "lng" : -66.64349147989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "b766ffcaa86c91b35f4ac273f2522a95a5af0ff5",
+         "name" : "UNB Faculty of Forestry and Environmental Management",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1198,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108334552914729368154\"\u003eUNB Faculty of Forestry and Environmental Management\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAj_0E68Lbg_104z04xSlv7zKHkpg0dSfbhPjOqjr00CAVe1pl9ZGKAcEfLrBOKjHB7k-_AXGkOiqDOwQhBAW881zVrcjUiaIBIxJupIhHLmhIZw6jWI1nfKcPT9nRx-rCEhBD7lxYbSrG39wh_9bXIw0WGhT46UZG9BtCGkQiQoJcp_VpTF708Q",
+               "width" : 1800
+            }
+         ],
+         "place_id" : "ChIJK1NFww8ipEwRT6WZcLfoZiI",
+         "plus_code" : {
+            "compound_code" : "W9X5+52 Fredericton, New Brunswick",
+            "global_code" : "87QMW9X5+52"
+         },
+         "rating" : 5,
+         "reference" : "ChIJK1NFww8ipEwRT6WZcLfoZiI",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1
+      },
+      {
+         "formatted_address" : "41 Dineen Dr, Fredericton, NB E3B 9V7, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9461733,
+               "lng" : -66.6449597
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94744942989271,
+                  "lng" : -66.64342152010727
+               },
+               "southwest" : {
+                  "lat" : 45.94474977010727,
+                  "lng" : -66.64612117989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "843ef6bf255e4f413b711a1dd82df8398d890fd8",
+         "name" : "UNB Faculty of Law",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1201,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110695313209765563016\"\u003eUNB Faculty of Law\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAATH5gXIWUqn2iTgYpUpT3UcWIa9VYkdheNbMWHT0NfF0hK29xN6gJLU9RL9MqIF5z0z5WgCoOHaGmOoyMTKT9dnKjEVQ56Uispvc33ClQXN3weLM4PyAzL2-EW6l8T9A9EhCu_3Sl5WZ-c1ovnYg0a2M0GhRVrB1dF7C99xPYhD-bFzxsIBNTZQ",
+               "width" : 1800
+            }
+         ],
+         "place_id" : "ChIJ65xURhAipEwRD8S2FHxOZU0",
+         "plus_code" : {
+            "compound_code" : "W9W4+F2 Fredericton, New Brunswick",
+            "global_code" : "87QMW9W4+F2"
+         },
+         "rating" : 0,
+         "reference" : "ChIJ65xURhAipEwRD8S2FHxOZU0",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "Pacey Dr, Fredericton, NB E3B 5A3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9452284,
+               "lng" : -66.64229399999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94657002989272,
+                  "lng" : -66.64095072010727
+               },
+               "southwest" : {
+                  "lat" : 45.94387037010728,
+                  "lng" : -66.6436503798927
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "92ad43fcee609c80eefe121d174b4a270cfccccd",
+         "name" : "UNB Student Union Building",
+         "photos" : [
+            {
+               "height" : 3096,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/104360256214055617865\"\u003eT J\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAV9fWUbt1U2jdznSWqNGdFOl33M_vXyNS-XHhyBamg2x90dOROu7CGBIizpRIQ_fMRr_5MAWGNqG0knHHM4zGPym-Uy72Xrzr26FoFawSYv41Zyufd8wNrC79YZ4jtEaSEhA85_6XratV2Q7uq4iMFeINGhT3U2Oh1x14zgU_IYN9xzHan8_Pzg",
+               "width" : 4128
+            }
+         ],
+         "place_id" : "ChIJn-1gmxoipEwR7OIGEXljox4",
+         "plus_code" : {
+            "compound_code" : "W9W5+33 Fredericton, New Brunswick",
+            "global_code" : "87QMW9W5+33"
+         },
+         "rating" : 2,
+         "reference" : "ChIJn-1gmxoipEwR7OIGEXljox4",
+         "types" : [ "transit_station", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 4
+      },
+      {
+         "formatted_address" : "20 Bailey Dr, Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.946053,
+               "lng" : -66.6403782
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94743457989271,
+                  "lng" : -66.63882347010728
+               },
+               "southwest" : {
+                  "lat" : 45.94473492010727,
+                  "lng" : -66.64152312989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "8266221b9b4edc21ea71060f0eef15830db63670",
+         "name" : "University of New Brunswick Conference Services",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2216,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/107722994563533123855\"\u003erong yu\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA4PhTc3ApE4hPwMEB-TLfgq8X6E0zBq4qUSJeKHtUjLq6eSUnm7C9UWfm7LxSVrwAjEinpKDpNklbCrOwHqD5YT8N1Ce_XJpg3apWW7-KY1vW8sB3YiYTQyd3NbxncLlXEhBXgDKvwrn8ivwwFcMX8eV8GhRcqz9H8CZpllsfVv5sIXBAVpSA6A",
+               "width" : 3936
+            }
+         ],
+         "place_id" : "ChIJVVUlY6EYpEwRHt0ocpy9j4U",
+         "plus_code" : {
+            "compound_code" : "W9W5+CR Fredericton, New Brunswick",
+            "global_code" : "87QMW9W5+CR"
+         },
+         "rating" : 2.3,
+         "reference" : "ChIJVVUlY6EYpEwRHt0ocpy9j4U",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 3
+      },
+      {
+         "formatted_address" : "5A3, 19 Bailey Dr, Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9463514,
+               "lng" : -66.6394032
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94766092989273,
+                  "lng" : -66.63814242010729
+               },
+               "southwest" : {
+                  "lat" : 45.94496127010728,
+                  "lng" : -66.64084207989274
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "4e2e8f3b95282f1b71a4f120e173737af167da7c",
+         "name" : "McConnell Hall",
+         "photos" : [
+            {
+               "height" : 3100,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109260789289739061082\"\u003eJeff Kang\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRZAAAA_pTknY5h36P8wo8v3h3oGot-BYZcSM_xhP-OotLnjV66i-K0_DGUejbbCVizAbr03eIFZ4iorzBZh4R__zu44QEqP0Piip-Au_fDvY5rw1CHLLsoBu5GNdLTUunC-eBcEhD8grEfeV03RMavvgCwIncVGhSPZMt_GOKBW6TaknLEfNzkd8efdA",
+               "width" : 4649
+            }
+         ],
+         "place_id" : "ChIJ_yXQkg8ipEwRtJhL09dMCQQ",
+         "plus_code" : {
+            "compound_code" : "W9W6+G6 Fredericton, New Brunswick",
+            "global_code" : "87QMW9W6+G6"
+         },
+         "rating" : 3.5,
+         "reference" : "ChIJ_yXQkg8ipEwRtJhL09dMCQQ",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 2
+      },
+      {
+         "formatted_address" : "9 Macaulay Ln, Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9462707,
+               "lng" : -66.64207139999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94747707989273,
+                  "lng" : -66.64069537010727
+               },
+               "southwest" : {
+                  "lat" : 45.94477742010728,
+                  "lng" : -66.64339502989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "8997fde7233b8b8c9adb5ece2b00d16fc19392bb",
+         "name" : "Tilley Hall",
+         "place_id" : "ChIJVVUJyBoipEwRMcnWaYaU1r8",
+         "plus_code" : {
+            "compound_code" : "W9W5+G5 Fredericton, New Brunswick",
+            "global_code" : "87QMW9W5+G5"
+         },
+         "rating" : 5,
+         "reference" : "ChIJVVUJyBoipEwRMcnWaYaU1r8",
+         "types" : [ "school", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1
+      },
+      {
+         "formatted_address" : "10 MacKay Dr, Fredericton, NB E3B 0R6, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9428263,
+               "lng" : -66.64308369999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94430567989272,
+                  "lng" : -66.64154482010727
+               },
+               "southwest" : {
+                  "lat" : 45.94160602010728,
+                  "lng" : -66.64424447989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "3ff0ba4144a5b6707c192bc8978c0729c83636e2",
+         "name" : "Marshall d'Avray Hall",
+         "place_id" : "ChIJu7IjGBoipEwRPOQ0p7dCAJw",
+         "plus_code" : {
+            "compound_code" : "W9V4+4Q Fredericton, New Brunswick",
+            "global_code" : "87QMW9V4+4Q"
+         },
+         "rating" : 0,
+         "reference" : "ChIJu7IjGBoipEwRPOQ0p7dCAJw",
+         "types" : [ "school", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "5 Macaulay Ln, Fredericton, NB E3B 5A3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9460604,
+               "lng" : -66.64279519999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94735852989272,
+                  "lng" : -66.64132462010727
+               },
+               "southwest" : {
+                  "lat" : 45.94465887010728,
+                  "lng" : -66.64402427989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "dab0697a9fd2cda371b2e1c05beff12ddcc99d31",
+         "name" : "University of New Brunswick: Archives & Special Collections",
+         "place_id" : "ChIJ00KL1qMYpEwRRR2MOJnQj8s",
+         "plus_code" : {
+            "compound_code" : "W9W4+CV Fredericton, New Brunswick",
+            "global_code" : "87QMW9W4+CV"
+         },
+         "rating" : 3,
+         "reference" : "ChIJ00KL1qMYpEwRRR2MOJnQj8s",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1
+      },
+      {
+         "formatted_address" : "9 Bailey Dr, Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9477693,
+               "lng" : -66.64021439999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94910572989271,
+                  "lng" : -66.63887652010727
+               },
+               "southwest" : {
+                  "lat" : 45.94640607010727,
+                  "lng" : -66.64157617989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "da0904b4760cc854f6cbf0374b4419f332902cff",
+         "name" : "Memorial Hall",
+         "place_id" : "ChIJbZMPYQUipEwR9tOPt7VApSA",
+         "plus_code" : {
+            "compound_code" : "W9X5+4W Fredericton, New Brunswick",
+            "global_code" : "87QMW9X5+4W"
+         },
+         "rating" : 0,
+         "reference" : "ChIJbZMPYQUipEwR9tOPt7VApSA",
+         "types" : [ "school", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "Fredericton, NB, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.947434,
+               "lng" : -66.6420316
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94878382989273,
+                  "lng" : -66.64068177010726
+               },
+               "southwest" : {
+                  "lat" : 45.94608417010728,
+                  "lng" : -66.64338142989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "748bd3ee4a95c98d592dbb30ce6e837b789db6fe",
+         "name" : "Toole Hall",
+         "place_id" : "ChIJsUPMRnMjpEwR-KEQJ-chszE",
+         "plus_code" : {
+            "compound_code" : "W9W5+X5 Fredericton, New Brunswick",
+            "global_code" : "87QMW9W5+X5"
+         },
+         "rating" : 0,
+         "reference" : "ChIJsUPMRnMjpEwR-KEQJ-chszE",
+         "types" : [ "school", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "676 Windsor St, Fredericton, NB E3B 1B0, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.948397,
+               "lng" : -66.6438562
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94979127989272,
+                  "lng" : -66.64262322010728
+               },
+               "southwest" : {
+                  "lat" : 45.94709162010728,
+                  "lng" : -66.64532287989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "e7013f726502143222a3ea23586169c39658f8a3",
+         "name" : "UNB Grad House",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117592580384693632362\"\u003eNick Giroux\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAjyYjWxDpSAKyFvyBgkHcCkucWXgrzzFbJablokMrA5Wa3r_TSKIwP9I-xKPJU_nnW0qVPyyXCppgDxlFxgXNVwK-GOL9sOX3q0l7D1lXx5UZnqLXwhRAiAXBRwXPrpc1EhB5sJPJTl73EB5JCGZbu5FEGhSEx1yRqUWn-wqSmNz6U9kY9lykPg",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJMYTbNA4ipEwRcmnPjwSzhO0",
+         "plus_code" : {
+            "compound_code" : "W9X4+9F Fredericton, New Brunswick",
+            "global_code" : "87QMW9X4+9F"
+         },
+         "rating" : 4.8,
+         "reference" : "ChIJMYTbNA4ipEwRcmnPjwSzhO0",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 6
+      },
+      {
+         "formatted_address" : "4 Bailey Dr, Fredericton, NB E3B 5A3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9479118,
+               "lng" : -66.64150479999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94934822989273,
+                  "lng" : -66.64008277010727
+               },
+               "southwest" : {
+                  "lat" : 45.94664857010729,
+                  "lng" : -66.64278242989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "7525e419737dce456bf2898d97505c512fe46723",
+         "name" : "Science & Forestry Library (UNB Libraries)",
+         "place_id" : "ChIJZxWQ7Q8ipEwRKP6yXX36uVo",
+         "plus_code" : {
+            "compound_code" : "W9X5+59 Fredericton, New Brunswick",
+            "global_code" : "87QMW9X5+59"
+         },
+         "rating" : 0,
+         "reference" : "ChIJZxWQ7Q8ipEwRKP6yXX36uVo",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "formatted_address" : "15 Dineen Dr, Fredericton, NB E3B 5H5, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9503291,
+               "lng" : -66.6416717
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95137747989272,
+                  "lng" : -66.64020117010728
+               },
+               "southwest" : {
+                  "lat" : 45.94867782010728,
+                  "lng" : -66.64290082989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "4ed256b86b247031e18ad4194da716cc6f2d31fb",
+         "name" : "Geodesy and Geomatics, University of New Brunswick",
+         "photos" : [
+            {
+               "height" : 1052,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109793775009591922296\"\u003eRobbie Johnson\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAugo_s46Bv9n_-SXjkBRs968QUXr-9tBQ7j9rDU4qm9DTj-fh5UM3SzFZXcDZARvtORqnKNzsit7M2GIaNPyfQUnrzhGwLtCOnLz3161nVRF9QI1q-pqxEkE-huPadARQEhCYil3xvluvDlAiMfp7kkcBGhT0urlaPWL_ioXR0r2R7yRvQZm76A",
+               "width" : 1600
+            }
+         ],
+         "place_id" : "ChIJyXb4dA8ipEwR21z3b3I1mxE",
+         "plus_code" : {
+            "compound_code" : "X925+48 Fredericton, New Brunswick",
+            "global_code" : "87QMX925+48"
+         },
+         "rating" : 5,
+         "reference" : "ChIJyXb4dA8ipEwR21z3b3I1mxE",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1
+      },
+      {
+         "formatted_address" : "15 Dineen Dr Room C-15, Fredericton, NB E3B 5H5, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.950244,
+               "lng" : -66.64150699999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95133492989272,
+                  "lng" : -66.64020117010728
+               },
+               "southwest" : {
+                  "lat" : 45.94863527010727,
+                  "lng" : -66.64290082989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "f7420309a72edd10514556cf8a4963186a2df2e3",
+         "name" : "Engineering & Computer Science Library (UNB Libraries)",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "place_id" : "ChIJVaIKGg8ipEwRAuCerH4Cv7Y",
+         "plus_code" : {
+            "compound_code" : "X925+39 Fredericton, New Brunswick",
+            "global_code" : "87QMX925+39"
+         },
+         "rating" : 5,
+         "reference" : "ChIJVaIKGg8ipEwRAuCerH4Cv7Y",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 3
+      },
+      {
+         "formatted_address" : "51 Dineen Dr, Fredericton, NB E3B 5G3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.94401999999999,
+               "lng" : -66.64622129999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94530802989271,
+                  "lng" : -66.64478702010727
+               },
+               "southwest" : {
+                  "lat" : 45.94260837010727,
+                  "lng" : -66.64748667989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "65ab91fba4da578f98e75415f81516d21800d5f1",
+         "name" : "St. Thomas University",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3648,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/103897316350298665278\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA0nKlnVWc7NyTY3bJri8p6vus5nP-hWaYTGoTuyG394n_tDD0hkei8J1Z9mZtTF5HrSwg-BgocHI2A4CdP27JyQ68v2uxk5z_cy96O0AGavBvR8J0Sei1gfLW0fOuwo8fEhDRgzv15EkrDJ44RmtueSbpGhSLFQLb5pG17uIU4lXHMtNLtPuabg",
+               "width" : 5472
+            }
+         ],
+         "place_id" : "ChIJefUTNBkipEwRkB4RZY0FTdE",
+         "plus_code" : {
+            "compound_code" : "W9V3+JG Fredericton, New Brunswick",
+            "global_code" : "87QMW9V3+JG"
+         },
+         "rating" : 4.4,
+         "reference" : "ChIJefUTNBkipEwRkB4RZY0FTdE",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 24
+      },
+      {
+         "formatted_address" : "550 Windsor St, Fredericton, NB E3B 5A3, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9497051,
+               "lng" : -66.64257859999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.95110087989271,
+                  "lng" : -66.64064262010727
+               },
+               "southwest" : {
+                  "lat" : 45.94840122010727,
+                  "lng" : -66.64334227989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "ad5d6b5c4118620d534823899ad88ba6d9f410da",
+         "name" : "UNB Faculty of Computer Science",
+         "place_id" : "ChIJW8Q8_Q4ipEwR8oSZ_0Zx8WQ",
+         "plus_code" : {
+            "compound_code" : "W9X4+VX Fredericton, New Brunswick",
+            "global_code" : "87QMW9X4+VX"
+         },
+         "rating" : 4,
+         "reference" : "ChIJW8Q8_Q4ipEwR8oSZ_0Zx8WQ",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 4
+      },
+      {
+         "formatted_address" : "10 MacKay Dr #106, Fredericton, NB E3B 9W4, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9423888,
+               "lng" : -66.6428645
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94367362989271,
+                  "lng" : -66.64136377010728
+               },
+               "southwest" : {
+                  "lat" : 45.94097397010727,
+                  "lng" : -66.64406342989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "be7822dbecb39d56584fe4bef2a63c076722955b",
+         "name" : "Print Services - UNB",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 608,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113873078855350505356\"\u003ePrint Services - UNB\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAVrItOk5bRVQe76sowdhDvYYBS3fAKhOFny6cVZ4S-eYYoWTow_r_ZIzR_PuCCnxn5-oh3EmKjiH0jXvscVkDHJEnXlzGEsM0iKL0AdFThPt_X-JceRmnpCuYwyz-lFIMEhBEo-_okLjCgqUDxInvLT-eGhQ-5TPq1D1YKmdp_K9rw_CqfNt6fQ",
+               "width" : 1080
+            }
+         ],
+         "place_id" : "ChIJS15hJBoipEwRfiayxLB5S3s",
+         "plus_code" : {
+            "compound_code" : "W9R4+XV Fredericton, New Brunswick",
+            "global_code" : "87QMW9R4+XV"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJS15hJBoipEwRfiayxLB5S3s",
+         "types" : [ "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 5
+      },
+      {
+         "formatted_address" : "5 Macaulay Ln, Fredericton, NB E3B 5H5, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9462097,
+               "lng" : -66.64304589999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94735452989272,
+                  "lng" : -66.64142157010727
+               },
+               "southwest" : {
+                  "lat" : 45.94465487010727,
+                  "lng" : -66.64412122989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "804f6cfbc25d6210392258bb0468239ff4807cc1",
+         "name" : "Harriet Irving Library (UNB Libraries)",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2764,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109260789289739061082\"\u003eJeff Kang\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRZAAAAXmOIe2rL8Bw7ixXerScyOHZd_3iasxT46XGePiVS_8M9G19TvyrB52NrcdaGsKR6VtXm10LaaieirwtRC3d57tOJcNdTWt909iQvlEZnO7C2JsCFb0BSyxpn_lSmDDZeEhCjNLx3fecOiKb0qz1Tfm5LGhSUwfTEiDzv0LKM7lBHuiS8Ggn3pA",
+               "width" : 4146
+            }
+         ],
+         "place_id" : "ChIJGYybERAipEwRuTOHzAzHY5U",
+         "plus_code" : {
+            "compound_code" : "W9W4+FQ Fredericton, New Brunswick",
+            "global_code" : "87QMW9W4+FQ"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJGYybERAipEwRuTOHzAzHY5U",
+         "types" : [ "library", "cafe", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 19
+      },
+      {
+         "formatted_address" : "980 College Hill Rd, Fredericton, NB E3B 0J4, Canada",
+         "geometry" : {
+            "location" : {
+               "lat" : 45.9398267,
+               "lng" : -66.6469207
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.94126277989272,
+                  "lng" : -66.64578467010728
+               },
+               "southwest" : {
+                  "lat" : 45.93856312010727,
+                  "lng" : -66.64848432989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c00f293686cb9d65ff843cff9f1b2eaccde7d069",
+         "name" : "College Hill Apartments",
+         "place_id" : "ChIJuaMMJhgipEwRSf76psCsDuw",
+         "plus_code" : {
+            "compound_code" : "W9Q3+W6 Fredericton, New Brunswick",
+            "global_code" : "87QMW9Q3+W6"
+         },
+         "rating" : 2.8,
+         "reference" : "ChIJuaMMJhgipEwRSf76psCsDuw",
+         "types" : [ "point_of_interest", "establishment" ],
+         "user_ratings_total" : 6
+      }
+   ],
+   "status" : "OK"
+}
