@@ -21,6 +21,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -72,8 +73,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void getDeviceLocation() {
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+
         try {
                 if (perGranted) {
+                    mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(context, R.raw.map_style));
+
                     final Task<Location> location = mFusedLocationProviderClient.getLastLocation();
                     location.addOnCompleteListener(new OnCompleteListener<Location>() {
 
