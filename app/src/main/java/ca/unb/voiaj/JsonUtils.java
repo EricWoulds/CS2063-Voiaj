@@ -2,8 +2,6 @@ package ca.unb.voiaj;
 
 import android.content.Context;
 
-import androidx.annotation.NonNull;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -65,30 +63,6 @@ public class JsonUtils {
     }
 
     private String loadJSONFromURL(Context context) {
-        /*HttpURLConnection connection = null;
-        try {
-            URL url = new URL("https://maps.googleapis.com/maps/api/place/textsearch/json?" +
-                    "query=Landmark" +
-                    "&location=45.9636,66.6431" +
-                    "&radius=2000" +
-                    "&key=AIzaSyAmTIQ7Pljct5SqiAl4b5EPqqFCQ46K6HY");
-            connection = (HttpURLConnection) url
-                    .openConnection();
-            d(TAG, "Connection" + connection.toString());
-            return convertStreamToString(connection.getInputStream());
-        } catch (MalformedURLException exception) {
-            Log.e(TAG, "MalformedURLException");
-            return null;
-        } catch (IOException exception) {
-            Log.e(TAG, "IOException" + exception.toString());
-            return null;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        } finally {
-            if (null != connection)
-                connection.disconnect();
-        }*/
         try {
             InputStream is = context.getAssets().open(INPUT_JSON_FILE);
             int size = is.available();
@@ -102,31 +76,6 @@ public class JsonUtils {
         }
     }
 
-    /*private String convertStreamToString(InputStream is) {
-        BufferedReader reader = null;
-        StringBuilder sb = new StringBuilder();
-
-        try {
-            reader = new BufferedReader(new InputStreamReader(is));
-            String line = "";
-            while ((line = reader.readLine()) != null) {
-                sb.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        return sb.toString();
-    }
-*/
     public ArrayList<GooglePlace> getGooglePlace() {
         return googlePlacesArray;
     }

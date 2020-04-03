@@ -141,7 +141,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         protected void onPostExecute(ArrayList<GooglePlace> result) {
 
-            for(int i = 1; i < mGooglePlaces.size(); i++){
+            for(int i = 0; i < mGooglePlaces.size(); i++){
                 final GooglePlace gPlace = mGooglePlaces.get(i);
                 String name = gPlace.getName();
                 String lat = gPlace.getLatitude();
