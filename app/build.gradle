@@ -19,6 +19,12 @@ android {
     }
 }
 
+ext {
+    roomVersion = '2.2.3'
+    archLifecycleVersion = '2.2.0'
+    materialVersion = '1.1.0'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.google.android.gms:play-services-location:15.0.1"
@@ -34,4 +40,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'org.glassfish:javax.json:1.1.4'
     implementation 'org.jetbrains:annotations-java5:15.0'
+
+    // Room implementations:
+    // Room Components
+    implementation "androidx.room:room-runtime:$roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$roomVersion"
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:$archLifecycleVersion"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$archLifecycleVersion"
 }
