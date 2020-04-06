@@ -9,6 +9,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -52,19 +53,19 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleMap mMap;
     private boolean perGranted = false;
     private FusedLocationProviderClient mFusedLocationProviderClient;
+    private LocationManager locationManager;
 
 
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
-    private final String GOOGLE_BROWSER_API_KEY = "AIzaSyAmTIQ7Pljct5SqiAl4b5EPqqFCQ46K6HY";
     private ArrayList<GooglePlace> mGooglePlaces;
-
     public Context context;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+        locationManager =(LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         context = getApplicationContext();
 
         getLocationPermission();
@@ -90,6 +91,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                     moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
                                             DEFAULT_ZOOM);
                                 }
+
                                 Downloader dTask = new Downloader();
                                 dTask.execute();
 
@@ -106,6 +108,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+
     private void moveCamera(LatLng latLng, float zoom) {
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
@@ -114,6 +117,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(MapsActivity.this);
     }
+    private double getDistance(LatLng userLocation, LatLng marker) {
+        float[] dist = new float[1];
+
+        Location.distanceBetween(userLocation.latitude,userLocation.longitude, marker.latitude, marker.longitude, dist);
+
+        return dist[0] / 1000;
+    }
+
+
 
     private void getLocationPermission() {
         String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
