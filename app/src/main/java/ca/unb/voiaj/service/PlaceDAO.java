@@ -1,4 +1,4 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.service;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -6,6 +6,8 @@ import androidx.room.Update;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import java.util.List;
+
+import ca.unb.voiaj.service.Place;
 
 // Represents the Data access object for the UNBPlace table
 @Dao

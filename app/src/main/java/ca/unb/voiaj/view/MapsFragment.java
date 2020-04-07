@@ -1,9 +1,9 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.view;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 
 import android.Manifest;
 import android.content.Context;
@@ -12,6 +12,9 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import android.os.AsyncTask;
 
@@ -29,24 +32,14 @@ import com.google.android.gms.tasks.Task;
 
 import java.util.ArrayList;
 
-public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
+import ca.unb.voiaj.R;
+import ca.unb.voiaj.view.utils.GooglePlace;
+import ca.unb.voiaj.view.utils.JsonUtils;
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-        if (perGranted) {
-            getDeviceLocation();
-
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                return;
-            }
-            mMap.setMyLocationEnabled(true);
-        }else{
-            mMap.setMyLocationEnabled(false);
-        }
-    }
+public class MapsFragment extends Fragment implements OnMapReadyCallback {
 
     private static final String TAG = "MapsActivity";
+    private String fragmentName = "Map";
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 9002;
     private static final float DEFAULT_ZOOM = 16f;
 
@@ -55,29 +48,44 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FusedLocationProviderClient mFusedLocationProviderClient;
     private LocationManager locationManager;
 
-
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
     private ArrayList<GooglePlace> mGooglePlaces;
     public Context context;
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+    public MapsFragment() {
+        // Required empty public constructor
+    }
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+        if (perGranted) {
+            getDeviceLocation();
+
+            if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                return;
+            }
+            mMap.setMyLocationEnabled(true);
+        }else{
+            mMap.setMyLocationEnabled(false);
+        }
+    }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                Bundle savedInstanceState) {
+        getActivity().setTitle(fragmentName);
+        View view = inflater.inflate(R.layout.fragment_maps, container, false);
         locationManager =(LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
-        context = getApplicationContext();
-
         getLocationPermission();
-
+        return view;
     }
 
     private void getDeviceLocation() {
-        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-
+        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
         try {
                 if (perGranted) {
-                    mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(context, R.raw.map_style));
+                    mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(getActivity(), R.raw.map_style));
 
                     final Task<Location> location = mFusedLocationProviderClient.getLastLocation();
                     location.addOnCompleteListener(new OnCompleteListener<Location>() {
@@ -97,7 +105,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                             } else {
                                 Log.d(TAG, "onComplete: current location is null");
-                                Toast.makeText(MapsActivity.this, "unable to get current location", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "unable to get current location", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -114,8 +122,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void startMap() {
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(MapsActivity.this);
+        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
     }
     private double getDistance(LatLng userLocation, LatLng marker) {
         float[] dist = new float[1];
@@ -130,15 +138,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void getLocationPermission() {
         String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
 
-        if (ContextCompat.checkSelfPermission(this.getApplicationContext(), FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            if (ContextCompat.checkSelfPermission(this.getApplicationContext(), COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+        if (ContextCompat.checkSelfPermission(getActivity().getApplicationContext(), FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(getActivity().getApplicationContext(), COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 perGranted = true;
                 startMap();
             } else {
-                ActivityCompat.requestPermissions(this, permissions, LOCATION_PERMISSION_REQUEST_CODE);
+                ActivityCompat.requestPermissions(getActivity(), permissions, LOCATION_PERMISSION_REQUEST_CODE);
             }
         } else {
-            ActivityCompat.requestPermissions(this, permissions, LOCATION_PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions(getActivity(), permissions, LOCATION_PERMISSION_REQUEST_CODE);
         }
     }
 
@@ -146,7 +154,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         @Override
         protected ArrayList<GooglePlace> doInBackground(Void... params) {
-            JsonUtils Json = new JsonUtils(context);
+            JsonUtils Json = new JsonUtils(getActivity());
             Log.d(TAG,"JSON processed");
             mGooglePlaces = Json.getGooglePlace();
             return mGooglePlaces;
@@ -168,6 +176,5 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         .title(name));
             }
         }
-
     }
 }

@@ -1,4 +1,4 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.service;
 
 import android.app.Application;
 import android.util.Log;
@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+
+import ca.unb.voiaj.service.AppDatabase;
+import ca.unb.voiaj.service.Place;
+import ca.unb.voiaj.service.PlaceDAO;
 
 public class PlacesRepository {
     private PlaceDAO placeDao;

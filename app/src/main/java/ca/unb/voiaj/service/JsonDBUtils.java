@@ -1,4 +1,4 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.service;
 
 import android.content.Context;
 import org.json.JSONArray;
@@ -8,8 +8,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import ca.unb.voiaj.service.Place;
+
 // Loads JSON contents and returns an array of Places, taken from Lab Exam
-public class jsonDBUtils {
+public class JsonDBUtils {
     private static final String INPUT_JSON_FILE = "MockData.json";
     private static final String INPUT_JSON_FILE_UNB = "UNBMockData.json";
     private static final String JSON_KEY_GEO = "geometry";
@@ -24,7 +26,7 @@ public class jsonDBUtils {
     private ArrayList<Place> places;
 
     // Initializer to read our data source (JSON file) into an array of host city objects
-    public jsonDBUtils(Context context) {
+    public JsonDBUtils(Context context) {
         processJSON(context);
     }
 

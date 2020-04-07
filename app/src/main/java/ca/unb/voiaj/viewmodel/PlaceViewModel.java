@@ -1,9 +1,12 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.viewmodel;
 
 import androidx.lifecycle.AndroidViewModel;
 import androidx.annotation.NonNull;
 import android.app.Application;
 import java.util.List;
+
+import ca.unb.voiaj.service.Place;
+import ca.unb.voiaj.service.PlacesRepository;
 
 // View Model for Places implemented for scalability, with help from Lab 6
 public class PlaceViewModel extends AndroidViewModel {

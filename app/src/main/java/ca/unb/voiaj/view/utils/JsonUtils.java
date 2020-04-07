@@ -1,4 +1,4 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.view.utils;
 
 import android.content.Context;
 

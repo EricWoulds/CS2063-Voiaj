@@ -31,15 +31,17 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <activity
-            android:name="ca.unb.voiaj.MapsActivity">
+            android:name="ca.unb.voiaj.view.MapsFragment">
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD4NkmKHOKVvWqfz6DPsNl-wMk5zH8CFu4" />
 
         <activity
-            android:name="ca.unb.voiaj.MainActivity"
-            android:label="@string/title_activity_maps">
+            android:name="ca.unb.voiaj.view.MainActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
