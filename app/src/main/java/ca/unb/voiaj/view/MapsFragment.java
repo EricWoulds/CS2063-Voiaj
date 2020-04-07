@@ -76,7 +76,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                                 Bundle savedInstanceState) {
         getActivity().setTitle(fragmentName);
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
-        locationManager =(LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
+        locationManager =(LocationManager) getActivity().getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
         getLocationPermission();
         return view;
     }
