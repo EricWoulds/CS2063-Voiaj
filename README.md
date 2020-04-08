@@ -9,5 +9,4 @@ Voiaj helps to motivate the user to explore landmarks within the Fredericton are
 
 - We have a settings button but did not have time to implement the features but we had planned to allow the user to change the map style as well as what Google map locations could show up(gas stations, stores, resturants, etc.) 
 
-- Something that has occured when the app is first launched it will ask for permission for GPS location after this it seems that nothing is loading but if you hit the Map button at the bottom
-it fixes the issue and doesnt appear to come up again.
+- Something that has occurred when the app is first launched it will ask for permission for GPS location after this it seems that nothing is loading but if you hit the Map button at the bottom it fixes the issue and does not appear to come up again.
