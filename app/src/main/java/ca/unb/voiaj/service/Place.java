@@ -1,4 +1,4 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.service;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

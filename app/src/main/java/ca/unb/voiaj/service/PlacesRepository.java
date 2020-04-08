@@ -1,4 +1,4 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.service;
 
 import android.app.Application;
 import android.util.Log;
@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+
+import ca.unb.voiaj.service.AppDatabase;
+import ca.unb.voiaj.service.Place;
+import ca.unb.voiaj.service.PlaceDAO;
 
 public class PlacesRepository {
     private PlaceDAO placeDao;
@@ -22,6 +26,21 @@ public class PlacesRepository {
         Future<List<Place>> future = AppDatabase.databaseWriterExecutor.submit(new Callable<List<Place>>() {
             public List<Place> call() throws Exception {
                 List<Place> list = placeDao.getPlace(id);
+                return list;
+            }
+        });
+        try{
+            return future.get();
+        }
+        catch (ExecutionException | InterruptedException e){
+            return new ArrayList<>();
+        }
+    }
+
+    public List<Place> getPlaces() {
+        Future<List<Place>> future = AppDatabase.databaseWriterExecutor.submit(new Callable<List<Place>>() {
+            public List<Place> call() throws Exception {
+                List<Place> list = placeDao.getAllPlaces();
                 return list;
             }
         });

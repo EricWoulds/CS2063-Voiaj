@@ -1,18 +1,30 @@
-package ca.unb.voiaj;
+package ca.unb.voiaj.view;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 import android.os.AsyncTask;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import java.util.ArrayList;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import ca.unb.voiaj.R;
+import ca.unb.voiaj.service.Place;
+import ca.unb.voiaj.service.JsonDBUtils;
+import ca.unb.voiaj.viewmodel.PlaceViewModel;
 
 
 public class MainActivity  extends AppCompatActivity {
@@ -23,10 +35,21 @@ public class MainActivity  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         view = new ViewModelProvider(this).get(PlaceViewModel.class);
         super.onCreate(savedInstanceState);
-        if(isServiceOK()) {
-            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-            startActivity(intent);
+        setContentView(R.layout.activity_main);
+        if(isServiceOK() && (savedInstanceState == null)) {
+            Fragment homeFragment = new MapsFragment();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.content_frame, homeFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
         }
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        //toolbar.setOnMenuItemClickListener(mainOnToolbarMenuItemSelectedListener);
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationView);
+        navigation.setOnNavigationItemSelectedListener(mainOnNavigationItemSelectedListener);
 
         // Initialize shared preference that determines whether or not this is Voiaj's first run.
         // If this is the first run, the defValue will be true, indicating a first run
@@ -46,6 +69,37 @@ public class MainActivity  extends AppCompatActivity {
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isFirstRun", false).commit();
     }
 
+    private BottomNavigationView.OnNavigationItemSelectedListener mainOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            Fragment fragment;
+
+            switch(menuItem.getItemId()) {
+                case R.id.navigation_places:
+                    fragment = new PlacesFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.navigation_map:
+                    fragment = new MapsFragment();
+                    loadFragment(fragment);
+                    return true;
+//                case R.id.navigation_settings:
+//                    fragment = new InventoryFragment();
+//                    loadFragment(fragment);
+//                    return true;
+            }
+            return false;
+        }
+    };
+
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.content_frame, fragment);
+        transaction.addToBackStack(null);
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        transaction.commit();
+    }
 
     public boolean isServiceOK(){
         Log.d(TAG, "isServicesOK: checking google services version");
@@ -70,7 +124,7 @@ public class MainActivity  extends AppCompatActivity {
 
     // Loads contents of JSON data from both JSON files into Place objects to be inserted into the database
     public ArrayList<Place> loadJSONData(){
-        jsonDBUtils jsondbUtils = new jsonDBUtils(getApplicationContext());
+        JsonDBUtils jsondbUtils = new JsonDBUtils(getApplicationContext());
         return jsondbUtils.getPlaces();
     }
 
