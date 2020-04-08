@@ -93,7 +93,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                     made.showInfoWindow();
                     //checking db for Place with equal LatLng
                     UpdateAsync(marked);
-                    } else{
+                } else{
                     //if marker is unvisited
                     marker.remove();
                     Marker made = mMap.addMarker(new MarkerOptions().position(marked)
@@ -103,7 +103,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                     made.showInfoWindow();
                     //checking db for Place with equal LatLng
                     UpdateAsync(marked);
-                    }
+                }
                 return false;
             }
         });
@@ -133,14 +133,14 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                         else{
                             pview.updatePlace(p.get(i).getId(), p.get(i).getFormattedAddress(), p.get(i).getName(), true, p.get(i).getLongitude(), p.get(i).getLatitude());
                         }
+                    }
                 }
             }
-        }
-    }).start();
+        }).start();
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         getActivity().setTitle(fragmentName);
         pview = new ViewModelProvider(this).get(PlaceViewModel.class);
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
@@ -153,41 +153,41 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
     private void getDeviceLocation() {
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
         try {
-                if (perGranted) {
-                    mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(getActivity(), R.raw.map_style));
+            if (perGranted) {
+                mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(getActivity(), R.raw.map_style));
 
-                    final Task<Location> location = mFusedLocationProviderClient.getLastLocation();
-                    location.addOnCompleteListener(new OnCompleteListener<Location>() {
+                final Task<Location> location = mFusedLocationProviderClient.getLastLocation();
+                location.addOnCompleteListener(new OnCompleteListener<Location>() {
 
-                        @Override
-                        public void onComplete(@NonNull Task task) {
-                            if (task.isSuccessful()) {
-                                Log.d(TAG, "onComplete: found location!");
-                                Location currentLocation = (Location) task.getResult();
-                                if(currentLocation != null){
-                                    moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
-                                            DEFAULT_ZOOM);
-                                }
-                                if(!prefs.getBoolean("firstTime", false)) {
-                                    Downloader dTask = new Downloader();
-                                    dTask.execute();
-                                    SharedPreferences.Editor editor = prefs.edit();
-                                    editor.putBoolean("firstTime", true);
-                                    editor.commit();
-                                }else{
-                                    Log.d(TAG, "Load from DB");
-                                    doAsync async = new doAsync();
-                                    async.execute();
-
-                                    }
-
-                                } else {
-                                Log.d(TAG, "onComplete: current location is null");
-                                Toast.makeText(getActivity(), "unable to get current location", Toast.LENGTH_SHORT).show();
+                    @Override
+                    public void onComplete(@NonNull Task task) {
+                        if (task.isSuccessful()) {
+                            Log.d(TAG, "onComplete: found location!");
+                            Location currentLocation = (Location) task.getResult();
+                            if(currentLocation != null){
+                                moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
+                                        DEFAULT_ZOOM);
                             }
+                            if(!prefs.getBoolean("firstTime", false)) {
+                                Downloader dTask = new Downloader();
+                                dTask.execute();
+                                SharedPreferences.Editor editor = prefs.edit();
+                                editor.putBoolean("firstTime", true);
+                                editor.commit();
+                            }else{
+                                Log.d(TAG, "Load from DB");
+                                doAsync async = new doAsync();
+                                async.execute();
+
+                            }
+
+                        } else {
+                            Log.d(TAG, "onComplete: current location is null");
+                            Toast.makeText(getActivity(), "unable to get current location", Toast.LENGTH_SHORT).show();
                         }
-                    });
-                }
+                    }
+                });
+            }
 
         } catch (SecurityException e) {
             Log.d(TAG, "getDeviceLocation: " + e.getMessage());
